@@ -6,6 +6,6 @@ const names = ["Nashville", "Hong Kong", "The back yard", "Earth",
 console.log("All Place Names")
 names.forEach(name => console.log(name))
 
-let thenames = names.includes("The")
+let thenames = names.filter(name => name.includes("The"))
 
-thenames.forEach(name => console.log())
+thenames.forEach(name => console.log(`The Place Names ${name}`))
